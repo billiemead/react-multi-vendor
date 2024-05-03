@@ -1,0 +1,19 @@
+
+.hhh-button {
+    background-color: rgb(30,41,59) ;
+    border: none;
+    color: rgb(255,255,255);
+    border-radius: 6px;
+    padding: 8px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+.hhh-button.full {
+    width: 100%;
+}
+.hhh-button:hover {
+    box-shadow:rgba(147, 197, 253, 0.5) 0px 10px 15px -3px,
+                rgba(147, 197, 253, 0.5) 0px 4px 6px -4px;
+}

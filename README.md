@@ -5,10 +5,13 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 ##
-**React.js** 18.2.0
-**Redux** 9.1.1
-**Tailwind** 3.4.3
-**JWT Token Decode**
+
+## DEPENDENCIES
+
+1. **React.js** 18.2.0
+2. **Redux** 9.1.1
+3. **Tailwind** 3.4.3
+4. **JWT Token Decode**
 ##
 ___
 **Author:** [Billie Mead] version 1.0.1 [billiemead.com][billie mead]
