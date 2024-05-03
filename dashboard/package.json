@@ -1,8 +1,10 @@
 {
   "name": "dashboard",
-  "version": "0.1.0",
+  "version": "1.0.2",
+  "author": "Billie Mead",
+  "license": "ISC",
   "private": true,
-  "dep end enc ies": {
+  "dependencies": {
     "@reduxjs/toolkit": "^2.2.3",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
