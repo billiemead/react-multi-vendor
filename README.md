@@ -1,4 +1,4 @@
-# REACT.js MULTI-VENODR ECOMMERCE w/ EXPRESS.js ADMIN
+# REACT.js MULTI-VENDOR ECOMMERCE w/ EXPRESS.js ADMIN
 ##
 
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
@@ -11,7 +11,8 @@
 1. **React.js** 18.2.0
 2. **Redux** 9.1.1
 3. **Tailwind** 3.4.3
-4. **JWT Token Decode**
+4. **JWT Token Decode** 4.0
+5. **React Router** 6.22.3
 ##
 ___
 **Author:** [Billie Mead] version 1.0.1 [billiemead.com][billie mead]
@@ -23,14 +24,13 @@ ___
 - Integrated Live Chat socket.io
 - Import a HTML file and watch it magically convert to Markdown
 - [AngularJS] - HTML enhanced for web apps!
-- [Ace Editor] - awesome web-based text editor
+- [Ace Editor] - Web-based text editor
 - [markdown-it] - Markdown parser done right. Fast and easy to extend.
 - [Twitter Bootstrap] - great UI boilerplate for modern web apps
 - [node.js] - evented I/O for the backend
 - [Express] - fast node.js network app framework [@tjholowaychuk]
 - [Gulp] - the streaming build system
-- [Breakdance](https://breakdance.github.io/breakdance/) - HTML
-to Markdown converter
+- [Breakdance](https://breakdance.github.io/breakdance/) - HTML to Markdown converter
 - [jQuery]
 ##
 ___
