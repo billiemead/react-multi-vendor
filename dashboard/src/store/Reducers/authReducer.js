@@ -38,6 +38,10 @@ export const authReducer = createSlice({
                 state.loader = false;
                 state.errorMessage = payload.error;
             })
+            .addCase(admin_login.fulfilled, (state, { payload }) => {
+                state.loader = false;
+                state.successMessage = payload.message;
+            })
     },
 })
 
