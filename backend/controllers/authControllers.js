@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt');
 const { createToken } = require("../utilities/tokenCreate");
 
 class authControllers {
-    admin_login = async (req, res) => {
+    admin_login = async (req, res) => { // admin_login method
         // console.log(req.body);
         const { email, password } = req.body;
         try {
@@ -19,7 +19,7 @@ class authControllers {
                         role: admin.role
                     });
                     res.cookie('accessToken', token, {
-                        expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000) // time in millisecond
+                        expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000) // 7 days expiry time in millisecond
                     });
                     responseReturn(res, 200, { token, message: "Login Successful!" });
                 } else {
@@ -31,7 +31,20 @@ class authControllers {
         } catch (error) {
             responseReturn(res, 500, { error: error.message });
         }
-    }
+    } // End admin_login method
+    get_user = async (req, res) => { // get_user method
+        const { id, role } = req;
+        try {
+            if (role === 'admin') {
+                const user = await adminModel.findById(id);
+                responseReturn(res, 200, { userInfo : user })
+            } else {
+                console.log('Seller Info');
+            }
+        } catch (error) {
+            console.log(error.message);
+        }
+    } // End get_user method
 }
 
 module.exports = new authControllers();

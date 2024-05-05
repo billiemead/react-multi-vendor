@@ -8,6 +8,7 @@ export const admin_login = createAsyncThunk(
         try {
             const { data } = await api.post('/admin-login', info, { withCredentials: true });
             // console.log(data);
+            localStorage.setItem('localAccessToken', data.token); // The setItem() method of the Storage interface, when passed a key name and value, will add that key to the given Storage object, or update that key's value if it already exists.
             return fulfillWithValue(data);
         } catch (error) {
             // console.log(error.response.data);
